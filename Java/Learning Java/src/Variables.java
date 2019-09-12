@@ -35,5 +35,22 @@ public class Variables {
         String fullName = firstName + lastName;
         System.out.println(fullName);
 
+        // + operator can also be used to add real types
+
+        int x = 5;
+        int y = 6;
+        System.out.println(x + y); // Print the value of x + y
+
+        /*
+         *----------------------------------------------------------------------------------------------------
+         *                                      Declare Many Variables
+         * ----------------------------------------------------------------------------------------------------
+         */
+
+        // You can easily declare many variables of the same type like this:
+        int a = 5, b = 6, c = 50;
+        System.out.println(a + b + c);
+
+        // All variables must have unique names
     }
 }
