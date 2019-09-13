@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="97f0c2a2-09d7-4dd3-8fdd-c4663a371ddc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Operators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Operators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Strings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Strings.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -145,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568374937560</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Operators.java added">
+      <created>1568375744946</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1568375744946</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,6 +172,7 @@
     <MESSAGE value="Variables.java added" />
     <MESSAGE value="Variables.java updated" />
     <MESSAGE value="DataTypes.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="DataTypes.java" />
+    <MESSAGE value="Operators.java added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Operators.java added" />
   </component>
 </project>
