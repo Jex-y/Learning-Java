@@ -9,6 +9,7 @@ Rules:
 Please pick the highest task in the list that is not being worked on.
 
 Tasks are as following, # indicates that it is done or being worked on:
+<ul>
     up to strings           [#]
     date and time           [ ]
     enumerated types        [ ]
@@ -23,5 +24,5 @@ Tasks are as following, # indicates that it is done or being worked on:
     methods                 [ ]
     variable scope          [ ]
     exceptions              [ ]
-    
+<\ul>
     
