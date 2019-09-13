@@ -5,3 +5,12 @@ Rules:
   for ( int i = 0; i < 10; i ++ ) {
       cout << i << std::endl;
   }
+
+Tasks to do are as following:
+    up to strings
+    date and time
+    enumerated types
+    pointers
+    input
+    math
+    formatting numbers
