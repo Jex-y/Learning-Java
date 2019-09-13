@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97f0c2a2-09d7-4dd3-8fdd-c4663a371ddc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DataTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Operators.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TypeCasting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,6 +32,7 @@
   <component name="ProjectId" id="1QPkcgbOU5li1Tobe3n4ERfEd57" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -49,7 +51,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Hello">
+  <component name="RunManager" selected="Application.TypeCasting">
     <configuration name="Hello" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Hello" />
       <module name="Learning Java" />
@@ -67,6 +69,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TypeCasting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TypeCasting" />
+      <module name="Learning Java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Variables" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Variables" />
       <module name="Learning Java" />
@@ -78,9 +87,11 @@
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Hello" />
       <item itemvalue="Application.Variables" />
+      <item itemvalue="Application.TypeCasting" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TypeCasting" />
         <item itemvalue="Application.Hello" />
         <item itemvalue="Application.Variables" />
         <item itemvalue="Application.Main" />
@@ -112,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568313590497</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="DataTypes.java">
+      <created>1568314053635</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1568314053635</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -120,7 +138,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -129,6 +149,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Variables.java added" />
     <MESSAGE value="Variables.java updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Variables.java updated" />
+    <MESSAGE value="DataTypes.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="DataTypes.java" />
   </component>
 </project>
