@@ -6,11 +6,22 @@ Rules:
       cout << i << std::endl;
   }
 
-Tasks to do are as following:
-    up to strings
-    date and time
-    enumerated types
-    pointers
-    input
-    math
-    formatting numbers
+Please pick the highest task in the list that is not being worked on.
+
+Tasks are as following, # indicates that it is done or being worked on:
+    up to strings           [#]
+    date and time           [ ]
+    enumerated types        [ ]
+    pointers                [ ]
+    input                   [ ]
+    math                    [ ]
+    formatting numbers      [ ]
+    selection               [ ]
+    iteration               [ ]
+    string formatting       [ ]
+    arrays and iteration    [ ]
+    methods                 [ ]
+    variable scope          [ ]
+    exceptions              [ ]
+    
+    
