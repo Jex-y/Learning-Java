@@ -11,7 +11,8 @@ Rules:
 Please pick the highest task in the list that is not being worked on.
 
 Tasks are as following, # indicates that it is done or being worked on:  
-    up to strings           [#]  
+    name                    status                  User
+    up to strings           [#]                     Jex-y
     date and time           [ ]  
     enumerated types        [ ]
     pointers                [ ]
