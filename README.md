@@ -1,4 +1,5 @@
 # STABS Computer science A level code.
+<pre>
 Rules:
   Please use sensible name for files, variables etc so that code is readable, comment where neseccarry.
   Put pleanty of spaces in code to make sure that it is easily readable. E.g:  
