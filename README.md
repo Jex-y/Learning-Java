@@ -14,7 +14,7 @@ Nikhil - I am only at input lol, so from what I gather from her task on Firefly 
 
 Tasks are as following, # indicates that it is done or being worked on:  
     name                    status                  User
-    up to strings           [#]                     Jex-y
+    up to strings           [#]                     Jex-y 14nd
     date and time           [ ]  
     enumerated types        [ ]
     pointers                [ ]
