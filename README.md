@@ -1,12 +1,14 @@
 # STABS Computer science A level code.
 <pre>
 Rules:
+  DO NOT COPY CODE EXACTLY - CHANGE SO THAT IT LOOKS ORIGINAL
   Please use sensible name for files, variables etc so that code is readable, comment where neseccarry.
   Put pleanty of spaces in code to make sure that it is easily readable. E.g:  
   
   for ( int i = 0; i < 10; i ++ ) {
       cout << i << std::endl;
   }
+
 
 Please pick the highest task in the list that is not being worked on.
 14nd - we do not need to do them all as the task only says 'up to where you are at'
