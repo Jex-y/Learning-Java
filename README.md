@@ -15,8 +15,8 @@ Nikhil - I am only at input lol, so from what I gather from her task on Firefly 
 Tasks are as following, # indicates that it is done or being worked on:  
     name                    status                  User
     up to strings           [#]                     14nd
-    date and time           [#]                    14nd
-    enumerated types        [ ]
+    date and time           [#]                     14nd
+    enumerated types        [#]                     14nd
     pointers                CANNOT BE DONE AS IT IS NOT A THING IN JAVA       
     input                   [ ]
     math                    [ ]
