@@ -10,6 +10,8 @@ Rules:
 
 Please pick the highest task in the list that is not being worked on.
 
+Nikhil - I am only at input lol, so from what I gather from her task on Firefly I don't think I have to bother doing much past that point, I just have to make sure everything up to there is finished... Please correct me if I'm wrong...
+
 Tasks are as following, # indicates that it is done or being worked on:  
     name                    status                  User
     up to strings           [#]                     Jex-y
