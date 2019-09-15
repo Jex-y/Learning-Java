@@ -1,56 +1,21 @@
 public class Variables {
-    public static void main(String [] args) {
+    public static void main(String[] args) {
+        String carName = "Volvo";
 
-        /*
-        *----------------------------------------------------------------------------------------------------
-        *                                               Variables
-        * ----------------------------------------------------------------------------------------------------
-        */
-
-        // General syntax for declaring variables is:
-        // type name = value;
-
-        int myNum = 15;
-        // or:
-        // int myNum;
-        // myNum = 15;
-        System.out.println( myNum );
-
-        float myFloatNum = 5.99f; // Float litterals must be followed by an 'f'
-        char myLetter = 'D';
-        boolean myBool = true;
-        String myText = "Hello";
-
-        /*
-         *----------------------------------------------------------------------------------------------------
- *                                               Displaying Variables
-         * ----------------------------------------------------------------------------------------------------
-         */
-
-        // System.out.println() is often used to display variables
-        // + operator can be used to concatenate strings
-
-        String firstName = "John ";
-        String lastName = "Doe";
-        String fullName = firstName + lastName;
-        System.out.println(fullName);
-
-        // + operator can also be used to add real types
+        int maxSpeed = 120;
 
         int x = 5;
-        int y = 6;
-        System.out.println(x + y); // Print the value of x + y
+        int y = 10;
+        System.out.println(x + y);
 
-        /*
-         *----------------------------------------------------------------------------------------------------
-         *                                      Declare Many Variables
-         * ----------------------------------------------------------------------------------------------------
-         */
+        int a = 5;
+        int b = 10;
+        int c = a + b;
+        System.out.println(c);
 
-        // You can easily declare many variables of the same type like this:
-        int a = 5, b = 6, c = 50;
-        System.out.println(a + b + c);
 
-        // All variables must have unique names
+        int d = 5, e = 6, f = 50;
+        System.out.println(d + e + f);
+
     }
 }
