@@ -12,6 +12,7 @@ Rules:
 
 Please pick the highest task in the list that is not being worked on.
 14nd - we do not need to do them all as the task only says 'up to where you are at'
+14tf - I'm still going to a few more just so we are a bit ahead
 Tasks are as following, # indicates that it is done or being worked on:  
     name                    status                  User
     up to strings           [#]                     14nd
