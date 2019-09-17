@@ -1,32 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97f0c2a2-09d7-4dd3-8fdd-c4663a371ddc" name="Default Changelist" comment="Duplicates Removed">
-      <change beforePath="$PROJECT_DIR$/../../Arrays.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Comments.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DataTypes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DateAndTime.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DateAndTime2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Dates.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Enums.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../HelloWorld.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Input.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Iteration.java" beforeDir="false" />
+    <list default="true" id="97f0c2a2-09d7-4dd3-8fdd-c4663a371ddc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ArraysAndIteration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataTypes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DateAndTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DateAndTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EnumsExample1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EnumsExample2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EnumsExample3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EnumsExample4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Strings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Strings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dateAndTimeBeforeAndAfter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Operators.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Strings.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Variables.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,20 +52,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Operators">
-    <configuration name="Hello" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Hello" />
+  <component name="RunManager" selected="Application.ArraysAndIteration">
+    <configuration name="ArraysAndIteration" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ArraysAndIteration" />
       <module name="Learning Java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+    <configuration name="Hello" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Hello" />
       <module name="Learning Java" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -114,19 +89,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
       <item itemvalue="Application.Hello" />
       <item itemvalue="Application.Variables" />
       <item itemvalue="Application.TypeCasting" />
       <item itemvalue="Application.Operators" />
+      <item itemvalue="Application.ArraysAndIteration" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ArraysAndIteration" />
         <item itemvalue="Application.Operators" />
         <item itemvalue="Application.TypeCasting" />
         <item itemvalue="Application.Hello" />
         <item itemvalue="Application.Variables" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568386354785</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Duplicates Removed">
+      <created>1568730975750</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1568730975750</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
