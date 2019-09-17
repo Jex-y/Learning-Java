@@ -1,4 +1,4 @@
-public class dataTypes {
+public class DataTypes {
     public static void main(String[] args) {
 
         int myNum = 9;
@@ -7,9 +7,11 @@ public class dataTypes {
         boolean myBool = false;
         String myText = "Hello World";
 
-        /*byte, short, int, long, float,
-        double, boolean and char are called:
-        primitive data types*/
+        /*
+        byte, short, int, long, float,
+        double, boolean and char are
+        primitive data types
+        */
 
         double myDouble = 9.78;
         int myInt = (int) myDouble;

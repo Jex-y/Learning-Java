@@ -9,6 +9,7 @@ class Dates {
         LocalDateTime myDateTime = LocalDateTime.of(2019, 8, 5, 19, 27, 0);
 
         DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("dd-MM-yyy HH:mm");
+
         String formattedDate = myDateTime.format(myFormatObj);
         System.out.println(formattedDate);
 
@@ -16,7 +17,7 @@ class Dates {
 
         LocalTime myTime = LocalTime.of(19, 30, 0);
 
-        System.out.println(myDate + " at" + myTime);
+        System.out.println(myDate + " " + myTime);
 
     }
 }

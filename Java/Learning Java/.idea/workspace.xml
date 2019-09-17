@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97f0c2a2-09d7-4dd3-8fdd-c4663a371ddc" name="Default Changelist" comment="" />
+    <list default="true" id="97f0c2a2-09d7-4dd3-8fdd-c4663a371ddc" name="Default Changelist" comment="Duplicates Removed">
+      <change beforePath="$PROJECT_DIR$/../../Arrays.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Comments.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DataTypes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DateAndTime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DateAndTime2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Dates.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Enums.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Input.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Iteration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DateAndTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DateAndTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EnumsExample1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EnumsExample2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EnumsExample3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EnumsExample4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Strings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Strings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dateAndTimeBeforeAndAfter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Operators.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Strings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Variables.java" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +57,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
@@ -173,11 +200,13 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Variables.java added" />
     <MESSAGE value="Variables.java updated" />
     <MESSAGE value="DataTypes.java" />
     <MESSAGE value="Operators.java added" />
     <MESSAGE value="Strings.java created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Strings.java created" />
+    <MESSAGE value="Duplicates Removed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Duplicates Removed" />
   </component>
 </project>

@@ -7,13 +7,13 @@ public class Strings {
 
         System.out.println(txt.toUpperCase());
 
-        String firstName = "John ";
-        String lastName = "Doe";
+        String firstName = "Java";
+        String lastName = "Bad";
         System.out.println(firstName + lastName);
 
         System.out.println(firstName.concat(lastName));
 
-        String txt2 = "Hello Everybody";
+        String txt2 = "C# Is better than Java";
         System.out.println(txt2.indexOf("e"));
     }
 }
