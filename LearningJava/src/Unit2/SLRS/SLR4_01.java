@@ -50,18 +50,11 @@ public class SLR4_01 {
                 }
             }
         }
-        int yearNum = 1;
-        for (int[][] year : sales) {
-            System.out.printf("Year %d ",yearNum);
-            yearNum ++;
-            for (int[] quart : year) {
-                System.out.printf("| ");
-                for (int dep: quart) {
-                    System.out.printf("%d ",dep);
-                }
-                System.out.printf("|");
-            }
-            System.out.printf("\n");
-        }
+        System.out.println("Enter dep, year, quarter on new lines: ");
+        int dep = Integer.parseInt(input.nextLine()) -1;
+        int year = Integer.parseInt(input.nextLine()) -1;
+        int quart = Integer.parseInt(input.nextLine()) -1;
+
+        System.out.printf("The sales are %d\n",sales[year][quart][dep]);
     }
 }
