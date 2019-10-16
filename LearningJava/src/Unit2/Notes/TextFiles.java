@@ -5,7 +5,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class Files {
+public class TextFiles {
     public static void main(String[] args) {
         final String filePath = "testfile.txt";
         destructiveWrite("Hello",filePath," ");
@@ -54,10 +54,10 @@ public class Files {
         String outputData = "";
         try {
             FileReader reader = new FileReader(inputFile);
+            data = (char)reader.read();
             while (data != (char)-1){
-                data = (char)reader.read();
                 outputData += data;
-
+                data = (char)reader.read();
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
