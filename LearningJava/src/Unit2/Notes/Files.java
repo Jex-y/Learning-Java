@@ -6,16 +6,42 @@ import java.io.IOException;
 public class Files {
     public static void main(String[] args) {
         final String outputFile = "testfile.txt";
-        String str = "Hello World";
+        destructiveWrite("Hello",outputFile," ");
+        appendWrite("World",outputFile);
+    }
 
+    public static boolean destructiveWrite(String str, String outputFile) {
+        return destructiveWrite(str,outputFile,"\n");
+    }
+
+    public static boolean destructiveWrite(String str,String outputFile,String eof) {
+        boolean result = false;
         try {
             FileWriter writer = new FileWriter(outputFile);
-            writer.write(str + "\n");
+            writer.write(str + eof);
             writer.close();
-            System.out.println("Succsessfully wrote to " + outputFile);
-
+            System.out.println("Successfully wrote to " + outputFile);
+            result = true;
         } catch (IOException e) {
             e.printStackTrace();
         }
+        return result;
+    }
+
+    public static boolean appendWrite(String str, String outputFile) {
+        return  appendWrite(str,outputFile,"\n");
+    }
+    public static boolean appendWrite(String str, String outputFile, String eof) {
+        boolean result = false;
+        try {
+            FileWriter writer = new FileWriter(outputFile, true);
+            writer.append(str+eof);
+            writer.close();
+            System.out.println("Successfully wrote to " + outputFile);
+            result = true;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return true;
     }
 }
