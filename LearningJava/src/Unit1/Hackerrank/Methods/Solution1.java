@@ -23,5 +23,5 @@ public class Solution1 {
         }
     }
 
-    public static boolean validate(int number, int lower, int upper) { return (lower <= number && number <= upper); }
+    private static boolean validate(int number, int lower, int upper) { return (lower <= number && number <= upper); }
 }

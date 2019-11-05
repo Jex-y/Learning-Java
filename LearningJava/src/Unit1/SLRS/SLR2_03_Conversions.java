@@ -6,15 +6,15 @@ public class SLR2_03_Conversions {
         menu();
     }
 
-    static double cmToInches(double cm) {
+    private static double cmToInches(double cm) {
         return cm / 2.54;
     }
 
-    static double inchesToCm(double inches) {
+    private static double inchesToCm(double inches) {
         return inches * 2.54;
     }
 
-    static void menu() {
+    private static void menu() {
         Scanner myScanner = new Scanner(System.in);
         double cm;
         double inches;

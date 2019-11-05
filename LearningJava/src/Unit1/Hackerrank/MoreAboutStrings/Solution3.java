@@ -10,7 +10,7 @@ public class Solution3 {
         String phrase = input.nextLine();
 
         System.out.println("What letter do you want to find?");
-        char chr = input.nextLine().charAt(0);;
+        char chr = input.nextLine().charAt(0);
 
         int count = 0;
 

@@ -1,7 +1,7 @@
 package Unit1.SLRS;
 
 public class GlobalVsLocal {
-    static int global = 1;
+    private static int global = 1;
     public static void main(String[] args) {
         int local = 2;
         System.out.printf("Global variable global is %d! It is in the scope of the whole class\n",global);
@@ -14,7 +14,7 @@ public class GlobalVsLocal {
 }
 
 class obj{
-    static int count = 0;
+    private static int count = 0;
     public obj() {
         count++;
         System.out.printf("Object created. There are now %d objects!\n",count);

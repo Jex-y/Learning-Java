@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class TextFiles {
     public static void main(String[] args) {
-        final String filePath = "testfile.txt";
+        final String filePath = "src\\Unit2\\Notes\\Output Files\\testFile.txt";
         destructiveWrite("Hello",filePath," ");
         appendWrite("World",filePath);
 
@@ -18,7 +18,7 @@ public class TextFiles {
         return destructiveWrite(str,outputFile,"\n");
     }
 
-    public static boolean destructiveWrite(String str,String outputFile,String eof) {
+    private static boolean destructiveWrite(String str, String outputFile, String eof) {
         boolean result = false;
         try {
             FileWriter writer = new FileWriter(outputFile);
@@ -32,10 +32,10 @@ public class TextFiles {
         return result;
     }
 
-    public static boolean appendWrite(String str, String outputFile) {
+    private static boolean appendWrite(String str, String outputFile) {
         return  appendWrite(str,outputFile,"\n");
     }
-    public static boolean appendWrite(String str, String outputFile, String eof) {
+    private static boolean appendWrite(String str, String outputFile, String eof) {
         boolean result = false;
         try {
             FileWriter writer = new FileWriter(outputFile, true);
@@ -49,7 +49,7 @@ public class TextFiles {
         return true;
     }
 
-    public static String fileRead(String inputFile){
+    private static String fileRead(String inputFile){
         char data = 0;
         String outputData = "";
         try {

@@ -11,7 +11,7 @@ public class Solution3 {
         System.out.println(sum);
     }
 
-    public static int sumOfFactors(int number) {
+    private static int sumOfFactors(int number) {
         int sum = 1;
         int divisor = 2;
         int last = number;
@@ -26,7 +26,7 @@ public class Solution3 {
         return sum;
     }
 
-    public static boolean isAmicable(int num1, int num2) {
+    private static boolean isAmicable(int num1, int num2) {
         return (!(num1 == num2) && sumOfFactors(num1) == num2 && sumOfFactors(num2) == num1);
     }
 }

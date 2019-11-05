@@ -7,13 +7,13 @@ import java.io.IOException;
 
 public class BinaryFiles {
     public static void main(String[] args) {
-        final String path = "binaryTestfile";
+        final String path = "src\\Unit2\\Notes\\Output Files\\binaryTestFile.txt";
         String stringToWrite = "Hello world!";
         writeString(stringToWrite,path);
         System.out.println("Read: " + readString(path));
     }
 
-    public static boolean writeString(String str,String path) {
+    private static boolean writeString(String str, String path) {
         boolean result = false;
         try {
             FileOutputStream fout = new FileOutputStream(path);
@@ -34,14 +34,14 @@ public class BinaryFiles {
         return result;
     }
 
-    public static String readString(String path) {
+    private static String readString(String path) {
         char data;
-        String output = "";
+        StringBuilder output = new StringBuilder();
         try {
             FileInputStream fin = new FileInputStream(path);
             data = (char)fin.read();
             while (data != (char)-1){
-                output += data;
+                output.append(data);
                 data = (char)fin.read();
             }
         } catch (FileNotFoundException e) {
@@ -49,6 +49,6 @@ public class BinaryFiles {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return output;
+        return output.toString();
     }
 }

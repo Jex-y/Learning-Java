@@ -10,7 +10,7 @@ public class SLR_04_ParammeterPassingbyValue {
         System.out.printf("After method, value in main is %d\n",x);
     }
 
-    static void method(int x) {
+    private static void method(int x) {
         System.out.printf("Value passed to method is %d\n",x);
         x ++;
         System.out.printf("Value in method changed to %d\n",x);

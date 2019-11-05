@@ -17,7 +17,7 @@ public class Solution2 {
         System.out.printf("%d raised to the power of %d is %d",base,exp,result);
     }
 
-    public static int exponent(int base, int exp){
+    private static int exponent(int base, int exp){
         int result = 1;
         for (int i = 0; i < exp; i++) {
             result *= base;

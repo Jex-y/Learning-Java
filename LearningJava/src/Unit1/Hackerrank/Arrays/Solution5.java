@@ -3,7 +3,7 @@ package Unit1.Hackerrank.Arrays;
 import java.util.Arrays;
 import java.util.Scanner;
 public class Solution5 {
-    public static void main(String args[] ) throws Exception {
+    public static void main(String[] args) throws Exception {
         // START Do not change this code
         Scanner input = new Scanner(System.in);
         String[] row1 = Arrays.stream(input.nextLine().split("\\s+")).toArray(String[]::new);

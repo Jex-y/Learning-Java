@@ -6,7 +6,7 @@ public class SLR2_03_Conversions_answer {
         menu();
     }
 
-    public static void menu() {
+    private static void menu() {
         Scanner myScanner = new Scanner(System.in);
         double cm;
         double inches;
@@ -39,11 +39,11 @@ public class SLR2_03_Conversions_answer {
         }
     }
 
-    public static double cmToInches(double cm) {
+    private static double cmToInches(double cm) {
         return cm / 2.54;
     }
 
-    public static double inchesToCm(double inches) {
+    private static double inchesToCm(double inches) {
         return inches * 2.54;
     }
 }

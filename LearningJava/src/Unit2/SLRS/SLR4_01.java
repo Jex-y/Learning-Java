@@ -38,7 +38,7 @@ public class SLR4_01 {
         }
     }
 
-    static void q3(Scanner input) {
+    private static void q3(Scanner input) {
         int[][][] sales = new int[5][4][2];
         int val;
         for (int year = 0; year < 5; year++) {
