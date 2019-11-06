@@ -71,7 +71,7 @@ public class SLR4_02 {
             while (data != (char)-1){
                 output.append(data);
                 dataBin = fin.read();
-                System.out.printf("%x",dataBin);
+                System.out.printf("0x%08x\t",dataBin);
                 data = (char)dataBin;
             }
         } catch (FileNotFoundException e) {

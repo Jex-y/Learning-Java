@@ -1,0 +1,5 @@
+My shopping list is:
+	Eggs
+	Milk
+	Butter
+	Food
