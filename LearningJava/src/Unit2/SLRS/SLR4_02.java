@@ -43,8 +43,9 @@ public class SLR4_02 {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        return outputData.toString();
+        String output = outputData.toString();
+        System.out.println(output);
+        return output;
     }
 
     private static void binaryWrite(String str, String writeFile){
@@ -66,9 +67,10 @@ public class SLR4_02 {
         try {
             FileInputStream fin = new FileInputStream(readFile);
             data = (char)fin.read();
+            int dataBin;
             while (data != (char)-1){
                 output.append(data);
-                int dataBin = fin.read();
+                dataBin = fin.read();
                 System.out.printf("%x",dataBin);
                 data = (char)dataBin;
             }
