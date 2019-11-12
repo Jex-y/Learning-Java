@@ -73,6 +73,7 @@ public class Queue<datatype> {
             if (size != 0) {
                 startPointer %= MAXSIZE;
                 result = data.get(startPointer);
+                data.set(startPointer,null);
                 startPointer++;
                 size--;
             } else {
