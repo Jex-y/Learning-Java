@@ -1,17 +1,25 @@
 package Unit2.Notes;
 
+enum Suit { Hearts, Spades, Clubs, Diamonds }
+enum Rank {Ace, num2, num3, num4, num5, num6, num7, num8, num9, num10, Jack, Queen, King}
+
 class Card {
-    String suit;
-    String rank;
+    Suit suit;
+    Rank rank;
     protected boolean placeholder = false;
 
-    Card(String suit, String rank) {
+    Card() {
+        this.suit = null;
+        this.rank = null;
+    }
+
+    Card(Suit suit, Rank rank) {
         this.suit = suit;
         this.rank = rank;
     }
 
     static Card placeholder() {
-        Card placeholderCard = new Card("","");
+        Card placeholderCard = new Card();
         placeholderCard.placeholder = true;
         return placeholderCard;
     }
@@ -19,7 +27,17 @@ class Card {
     public String stringValue() {
         String output;
         if (!placeholder) {
-            output = rank + " - " + suit;
+            output = String.valueOf(rank) + " - " + String.valueOf(suit);
+        switch (this.rank) {
+            case Ace:
+            case Jack:
+            case Queen:
+            case King:
+                break;
+            default:
+                output = output.substring(3);
+
+        }
         } else { output = "#"; }
         return output;
     }
@@ -31,8 +49,6 @@ public class Deck {
     private int rearPointer = 0;
     private int size = 0;
     private int MAXSIZE = 52;
-    private String [] suits = {"Hearts", "Spades", "Clubs","Diamonds"};
-    private String [] ranks = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
 
     Deck() {
         cards = new Card[MAXSIZE];
@@ -42,13 +58,13 @@ public class Deck {
 
     public void populate() {
         int index = 0;
-        for (String suit : suits) {
-            for (String rank : ranks) {
+        for (Suit suit : Suit.values()) {
+            for (Rank rank : Rank.values()) {
                 cards[index] = new Card(suit,rank);
                 index ++;
             }
         }
-        size = suits.length * ranks.length;
+        size = Suit.values().length * Rank.values().length;
         rearPointer = size;
     }
 
