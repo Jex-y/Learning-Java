@@ -69,7 +69,7 @@ public class Stack<datatype> {
             }
             if ( i != MAXSIZE - 1 ) { output += ", "; }
         }
-        output += "]e\nMax Size: ";
+        output += "]\nMax Size: ";
         output += String.valueOf(MAXSIZE);
         return output;
     }
