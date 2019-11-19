@@ -17,8 +17,7 @@ public class Solution3 {
 
         if (side1 + side2 > side3) {
             System.out.println("Those lengths make up a triangle");
-        }
-        else {
+        } else {
             System.out.println("Those lengths do not make up a triangle");
         }
     }

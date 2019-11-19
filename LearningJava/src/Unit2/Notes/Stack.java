@@ -7,7 +7,7 @@ public class Stack<datatype> {
     private ArrayList<datatype> data;
     private int MAXSIZE;
 
-    Stack (int MAXSIZE) {
+    Stack(int MAXSIZE) {
         this.MAXSIZE = MAXSIZE;
         data = new ArrayList<datatype>();
         for (int i = 0; i < MAXSIZE; i++) {
@@ -17,8 +17,8 @@ public class Stack<datatype> {
 
     public void push(datatype item) {
         if (size < MAXSIZE) {
-            data.set(size,item);
-            size ++;
+            data.set(size, item);
+            size++;
         } else {
             System.err.println("Error: Stack full, cannot push item");
         }
@@ -27,9 +27,9 @@ public class Stack<datatype> {
     public datatype pop() {
         datatype result = null;
         if (size > 0) {
-            size --;
+            size--;
             result = data.get(size);
-            data.set(size,null);
+            data.set(size, null);
         } else {
             System.err.println("Error: Stack is empty, cannot pop item");
         }
@@ -39,35 +39,39 @@ public class Stack<datatype> {
     public datatype peek() {
         datatype result = null;
         if (size > 0) {
-            result = data.get(size-1);
+            result = data.get(size - 1);
         } else {
             System.err.println("Error: Stack is empty, cannot peek item");
         }
         return result;
     }
 
-    public boolean isEmpty() { return size == 0; }
+    public boolean isEmpty() {
+        return size == 0;
+    }
 
-    public boolean isFull() { return size == MAXSIZE; }
+    public boolean isFull() {
+        return size == MAXSIZE;
+    }
 
     public String toString() {
         String output = "[ ";
         boolean first = true;
         datatype value;
-        for ( int i = 0; i < MAXSIZE; i++ ) {
-            if ( i < size ){
+        for (int i = 0; i < MAXSIZE; i++) {
+            if (i < size) {
                 value = data.get(i);
                 if (value != null) {
                     output += String.valueOf(value);
-                }
-                else {
+                } else {
                     output += "#";
                 }
-            }
-            else {
+            } else {
                 output += "#";
             }
-            if ( i != MAXSIZE - 1 ) { output += ", "; }
+            if (i != MAXSIZE - 1) {
+                output += ", ";
+            }
         }
         output += "]\nMax Size: ";
         output += String.valueOf(MAXSIZE);

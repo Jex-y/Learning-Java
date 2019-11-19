@@ -12,7 +12,7 @@ public class Solution8 {
         System.out.println("Enter the higher number");
         int higher = Integer.parseInt(input.nextLine());
 
-        for (int i = lower; i <= higher ; i++) {
+        for (int i = lower; i <= higher; i++) {
             System.out.println(i);
         }
     }

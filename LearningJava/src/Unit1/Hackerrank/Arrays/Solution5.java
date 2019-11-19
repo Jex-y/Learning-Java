@@ -2,8 +2,9 @@ package Unit1.Hackerrank.Arrays;
 
 import java.util.Arrays;
 import java.util.Scanner;
+
 public class Solution5 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // START Do not change this code
         Scanner input = new Scanner(System.in);
         String[] row1 = Arrays.stream(input.nextLine().split("\\s+")).toArray(String[]::new);
@@ -23,11 +24,11 @@ public class Solution5 {
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[i].length; j++) {
                 if (word.toLowerCase().equals(board[i][j].toLowerCase())) {
-                    count ++;
+                    count++;
                 }
             }
         }
-        System.out.printf("Found %d occurrences of %s\n",count,word);
+        System.out.printf("Found %d occurrences of %s\n", count, word);
     }
 }
 

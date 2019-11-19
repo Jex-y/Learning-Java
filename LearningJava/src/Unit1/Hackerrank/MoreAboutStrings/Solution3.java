@@ -21,9 +21,9 @@ public class Solution3 {
         }
 
         if (count > 0) {
-            System.out.printf("Found %d",count);
+            System.out.printf("Found %d", count);
         } else {
-            System.out.printf("Did not find %s",chr);
+            System.out.printf("Did not find %s", chr);
         }
     }
 }

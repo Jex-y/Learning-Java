@@ -11,11 +11,12 @@ public class SLR4_01 {
         //q2(input);
         q3(input);
     }
-    static void q1(Scanner input){
+
+    static void q1(Scanner input) {
         int[] values = new int[5];
         int val;
         for (int year = 0; year < 5; year++) {
-            System.out.printf("Enter sales for year %d:\t",year+1);
+            System.out.printf("Enter sales for year %d:\t", year + 1);
             val = Integer.parseInt(input.nextLine());
             values[year] = val;
         }
@@ -23,7 +24,7 @@ public class SLR4_01 {
         System.out.println(Arrays.toString(values));
     }
 
-    static void q2(Scanner input){
+    static void q2(Scanner input) {
         int[][] sales = new int[5][4];
         int val;
         for (int year = 0; year < 5; year++) {
@@ -51,10 +52,10 @@ public class SLR4_01 {
             }
         }
         System.out.println("Enter dep, year, quarter on new lines: ");
-        int dep = Integer.parseInt(input.nextLine()) -1;
-        int year = Integer.parseInt(input.nextLine()) -1;
-        int quart = Integer.parseInt(input.nextLine()) -1;
+        int dep = Integer.parseInt(input.nextLine()) - 1;
+        int year = Integer.parseInt(input.nextLine()) - 1;
+        int quart = Integer.parseInt(input.nextLine()) - 1;
 
-        System.out.printf("The sales are %d\n",sales[year][quart][dep]);
+        System.out.printf("The sales are %d\n", sales[year][quart][dep]);
     }
 }

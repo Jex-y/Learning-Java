@@ -21,9 +21,9 @@ public class Solution4 {
         }
 
         if (index != -1) {
-            System.out.printf("Found %s at index %d",chr,index);
+            System.out.printf("Found %s at index %d", chr, index);
         } else {
-            System.out.printf("%s was not found in the code",chr);
+            System.out.printf("%s was not found in the code", chr);
         }
     }
 }

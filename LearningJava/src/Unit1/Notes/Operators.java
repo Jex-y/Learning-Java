@@ -1,5 +1,6 @@
 package Unit1.Notes;
 
+@SuppressWarnings("PointlessBooleanExpression")
 public class Operators {
     public static void main(String[] args) {
         /*
@@ -20,8 +21,8 @@ public class Operators {
         result = int1 * int2;
         result = int1 / int2;
         result = int1 % int2;
-        result ++;
-        result --;
+        result++;
+        result--;
 
         /*
          *   ----------------------------------------------------------------------------------------------------
@@ -72,13 +73,6 @@ public class Operators {
         bool = (true && false);
         bool = (true || false);
         bool = !true;
-
-
-
-
-
-
-
 
 
     }

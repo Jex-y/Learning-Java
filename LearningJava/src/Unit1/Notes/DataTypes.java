@@ -23,13 +23,13 @@ public class DataTypes {
          */
 
         // Integer types:
-        byte    myByte  = 1; // 8 bits
-        short   myShort = 2; // 16 bits
-        int     myInt   = 4; // 32 bits
-        long    myLong  = 8; // 64 bits
+        byte myByte = 1; // 8 bits
+        short myShort = 2; // 16 bits
+        int myInt = 4; // 32 bits
+        long myLong = 8; // 64 bits
 
         // Floating point types:
-        float   myFloat     = 3.141f;       // 32 bits
-        double  myDouble    = 6.63e-34d;    // 64 bits
+        float myFloat = 3.141f;       // 32 bits
+        double myDouble = 6.63e-34d;    // 64 bits
     }
 }

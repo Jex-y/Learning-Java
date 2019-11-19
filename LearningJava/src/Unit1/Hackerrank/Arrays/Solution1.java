@@ -6,12 +6,12 @@ public class Solution1 {
         int[] scores = {80, 85, 70, 60};
 
         int index = 2;
-        System.out.printf("%s scored %d\n",names[index],scores[index]);
+        System.out.printf("%s scored %d\n", names[index], scores[index]);
 
         scores[index] = 50;
 
         for (int i = 0; i < names.length; i++) {
-            System.out.printf("%s scored %d\n",names[i],scores[i]);
+            System.out.printf("%s scored %d\n", names[i], scores[i]);
         }
     }
 }

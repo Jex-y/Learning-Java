@@ -18,6 +18,6 @@ public class Solution2 {
             top = (mark > top) ? mark : top;
         }
 
-        System.out.printf("The highest mark was %d",top);
+        System.out.printf("The highest mark was %d", top);
     }
 }

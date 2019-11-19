@@ -11,7 +11,7 @@ public class Solution6 {
 
         int days;
 
-        switch (month.toLowerCase()){
+        switch (month.toLowerCase()) {
             case "january":
                 days = 31;
                 break;
@@ -51,6 +51,6 @@ public class Solution6 {
             default:
                 days = 0;
         }
-        System.out.printf("There are %d days in %s",days,month);
+        System.out.printf("There are %d days in %s", days, month);
     }
 }

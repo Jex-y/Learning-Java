@@ -11,9 +11,9 @@ public class Solution4 {
         for (int i = 0; i < 5; i++) {
             System.out.println("Enter an integer");
             temp = Integer.parseInt(input.nextLine());
-            System.out.printf((temp%2 == 1) ? "%d is odd\n" : "%d is even\n",temp);
+            System.out.printf((temp % 2 == 1) ? "%d is odd\n" : "%d is even\n", temp);
             sum += temp;
         }
-        System.out.printf("Total of all numbers is %d",sum);
+        System.out.printf("Total of all numbers is %d", sum);
     }
 }

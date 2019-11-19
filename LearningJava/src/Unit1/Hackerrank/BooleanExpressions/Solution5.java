@@ -9,8 +9,8 @@ public class Solution5 {
         System.out.println("Enter a number");
         int num = Integer.parseInt(input.nextLine());
 
-        boolean case1 = (num%2 != 0 && String.valueOf(num).length() == 2);
-        boolean case2 = (num%2 == 0 && String.valueOf(num).length() == 3);
+        boolean case1 = (num % 2 != 0 && String.valueOf(num).length() == 2);
+        boolean case2 = (num % 2 == 0 && String.valueOf(num).length() == 3);
 
         if (case1 || case2) {
             System.out.println("Yes");

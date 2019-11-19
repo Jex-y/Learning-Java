@@ -17,11 +17,11 @@ public class ArrayLists {
             myShopping.add(data);
         }
         System.out.println(myShopping);
-        System.out.printf("The third item in your shopping list is %s\n",myShopping.get(2));
+        System.out.printf("The third item in your shopping list is %s\n", myShopping.get(2));
         System.out.println("Changed the second item to chocolate");
-        myShopping.set(1,"chocolate");
+        myShopping.set(1, "chocolate");
         System.out.println("Remove the last item from your shopping list");
-        myShopping.remove(myShopping.size()-1);
+        myShopping.remove(myShopping.size() - 1);
         System.out.println("Cleared shopping list");
         myShopping.clear();
         var myDoubles = new ArrayList<Double>();

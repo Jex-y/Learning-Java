@@ -16,10 +16,9 @@ public class Solution4 {
         int upper = Integer.parseInt(input.nextLine());
 
         if (lower <= num && upper >= num) {
-            System.out.printf("%d is in the range of %d to %d",num,lower,upper);
-        }
-        else {
-            System.out.printf("%d is not in the range of %d to %d",num,lower,upper);
+            System.out.printf("%d is in the range of %d to %d", num, lower, upper);
+        } else {
+            System.out.printf("%d is not in the range of %d to %d", num, lower, upper);
         }
     }
 }

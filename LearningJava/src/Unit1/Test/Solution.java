@@ -1,8 +1,8 @@
+package Unit1.Test;
+
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
-        import java.lang.Math;
-        import java.time.format.DateTimeFormatter;
-        import java.time.LocalDateTime;
 
 public class Solution {
     public static void main(String[] args) {
@@ -10,7 +10,7 @@ public class Solution {
         //q1(input);
         //q2(input);
         //q3(input);
-        q4(input);
+        //q4(input);
         //q5(input);
         //q6();
     }
@@ -24,7 +24,7 @@ public class Solution {
 
         int diff = Math.abs(num1 - num2);
 
-        System.out.printf("The difference is %d\n",diff);
+        System.out.printf("The difference is %d\n", diff);
     }
 
     static void q2(Scanner input) {
@@ -50,7 +50,7 @@ public class Solution {
         String phrase = input.nextLine();
         String output = "";
         char chr;
-        for (int index = 0; index < phrase.length(); index ++) {
+        for (int index = 0; index < phrase.length(); index++) {
             chr = phrase.charAt(index);
             switch (chr) {
                 case 'a':
@@ -70,9 +70,9 @@ public class Solution {
         System.out.println("Enter a date");
         String dateRaw = input.nextLine();
         DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("d-MMM-yyyy");
-        LocalDate date = LocalDate.parse(dateRaw,dateFormatter);
+        LocalDate date = LocalDate.parse(dateRaw, dateFormatter);
 
-        System.out.printf("That is a %s\n",date.getDayOfWeek());
+        System.out.printf("That is a %s\n", date.getDayOfWeek());
 
         if (date.isBefore(LocalDate.now())) {
             System.out.println("That date is before today");
@@ -81,9 +81,9 @@ public class Solution {
         }
 
         if (date.isLeapYear()) {
-            System.out.printf("%s is a leap year\n",date.getYear());
+            System.out.printf("%s is a leap year\n", date.getYear());
         } else {
-            System.out.printf("%s is not a leap year\n",date.getYear());
+            System.out.printf("%s is not a leap year\n", date.getYear());
         }
 
     }
@@ -97,7 +97,7 @@ public class Solution {
         double total = 0;
         System.out.println("Enter the data");
         data = input.nextLine();
-        while(!data.equals("STOP")) {
+        while (!data.equals("STOP")) {
             for (int index = 0; index < data.length(); index++) {
                 chr = data.charAt(index);
                 if (chr == ':') {
@@ -115,18 +115,18 @@ public class Solution {
             System.out.println("Enter the data");
             data = input.nextLine();
         }
-        System.out.printf("John spent a total of £%.2f\n",total);
+        System.out.printf("John spent a total of £%.2f\n", total);
     }
 
     static void q6() {
-        int[] numbers = {1,1,1,1,1};
+        int[] numbers = {1, 1, 1, 1, 1};
         int lastNum = numbers[0];
         int count = 0;
-        for (int num: numbers) {
-            if (num == lastNum){
+        for (int num : numbers) {
+            if (num == lastNum) {
                 count += 1;
             } else if (count > 1) {
-                System.out.printf("%d was found %d times\n",lastNum,count);
+                System.out.printf("%d was found %d times\n", lastNum, count);
                 count = 1;
             }
             lastNum = num;

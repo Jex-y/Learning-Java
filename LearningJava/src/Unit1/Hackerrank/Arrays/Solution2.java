@@ -1,7 +1,7 @@
 package Unit1.Hackerrank.Arrays;
 
-import java.util.*;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Solution2 {
     public static void main(String[] args) {
@@ -11,7 +11,7 @@ public class Solution2 {
         // END
 
         for (int i = 0; i < planets.length; i++) {
-            System.out.printf("%s is at position %d\n",planets[i],i);
+            System.out.printf("%s is at position %d\n", planets[i], i);
 
         }
 

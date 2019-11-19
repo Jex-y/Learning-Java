@@ -7,6 +7,7 @@ public class FunctionsVsProcedure {
         procedure(x);
 
     }
+
     private static int function(int x) {
         System.out.println("Function called!"); // This is a Function
         x++;
@@ -14,7 +15,7 @@ public class FunctionsVsProcedure {
     }
 
     private static void procedure(int x) {
-        System.out.printf("The number that you entered was %d!\n",x); // This is a procedure
+        System.out.printf("The number that you entered was %d!\n", x); // This is a procedure
         return;
     }
 }

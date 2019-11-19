@@ -18,10 +18,12 @@ public class Solution1 {
         for (int i = 0; i < 5; i++) {
             System.out.println("Enter a number");
             number = Integer.parseInt(input.nextLine());
-            result = validate(number,lower,upper);
+            result = validate(number, lower, upper);
             System.out.println(result);
         }
     }
 
-    private static boolean validate(int number, int lower, int upper) { return (lower <= number && number <= upper); }
+    private static boolean validate(int number, int lower, int upper) {
+        return (lower <= number && number <= upper);
+    }
 }

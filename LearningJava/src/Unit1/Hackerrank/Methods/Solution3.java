@@ -6,7 +6,9 @@ public class Solution3 {
         int num2;
         for (int num1 = 0; num1 < 10000; num1++) {
             num2 = sumOfFactors(num1);
-            if (isAmicable(num1,num2)) {sum += num1;}
+            if (isAmicable(num1, num2)) {
+                sum += num1;
+            }
         }
         System.out.println(sum);
     }
@@ -18,7 +20,7 @@ public class Solution3 {
         while (divisor < last) {
             if (number % divisor == 0) {
                 sum += divisor;
-                last = number/divisor;
+                last = number / divisor;
                 sum += last;
             }
             divisor++;

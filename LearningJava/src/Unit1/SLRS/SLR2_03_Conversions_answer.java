@@ -1,6 +1,7 @@
 package Unit1.SLRS;
 
 import java.util.Scanner;
+
 public class SLR2_03_Conversions_answer {
     public static void main(String[] args) {
         menu();
@@ -17,12 +18,12 @@ public class SLR2_03_Conversions_answer {
             System.out.println("2. inches to cm");
             System.out.println("3. Quit");
             choice = 0;
-            while (choice < 1 || choice > 3)  {
+            while (choice < 1 || choice > 3) {
                 System.out.print("? ");
                 choice = myScanner.nextInt();
             }
 
-            switch(choice){
+            switch (choice) {
                 case 1:
                     System.out.print("Enter amount in cm ");
                     cm = myScanner.nextFloat();

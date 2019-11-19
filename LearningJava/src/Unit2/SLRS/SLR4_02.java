@@ -1,14 +1,13 @@
 package Unit2.SLRS;
 
-import java.io.*;
-
+@SuppressWarnings("SameParameterValue")
 public class SLR4_02 {
     public static void main(String[] args) {
         String outputDir = "src\\Unit2\\SLRS\\Output Files\\";
         String sampleText = "My shopping list is:\n\tEggs\n\tMilk\n\tButter\n\tFood";
-        writeLines(sampleText,outputDir);
+        writeLines(sampleText, outputDir);
         System.out.println(readLines(outputDir + "shoppingList.txt"));
-        binaryWrite("Edward Jex",outputDir+"name.txt");
+        binaryWrite("Edward Jex", outputDir + "name.txt");
         binaryRead(outputDir + "name.txt");
 
     }
@@ -33,10 +32,10 @@ public class SLR4_02 {
         StringBuilder outputData = new StringBuilder();
         try {
             FileReader reader = new FileReader(readFile);
-            data = (char)reader.read();
-            while (data != (char)-1){
+            data = (char) reader.read();
+            while (data != (char) -1) {
                 outputData.append(data);
-                data = (char)reader.read();
+                data = (char) reader.read();
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -48,7 +47,7 @@ public class SLR4_02 {
         return output;
     }
 
-    private static void binaryWrite(String str, String writeFile){
+    private static void binaryWrite(String str, String writeFile) {
         try {
             FileOutputStream fout = new FileOutputStream(writeFile);
             byte[] data = str.getBytes();
@@ -61,18 +60,18 @@ public class SLR4_02 {
         }
     }
 
-    private static String binaryRead(String readFile){
+    private static String binaryRead(String readFile) {
         char data;
         StringBuilder output = new StringBuilder();
         try {
             FileInputStream fin = new FileInputStream(readFile);
-            data = (char)fin.read();
+            data = (char) fin.read();
             int dataBin;
-            while (data != (char)-1){
+            while (data != (char) -1) {
                 output.append(data);
                 dataBin = fin.read();
-                System.out.printf("0x%08x\t",dataBin);
-                data = (char)dataBin;
+                System.out.printf("0x%08x\t", dataBin);
+                data = (char) dataBin;
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();

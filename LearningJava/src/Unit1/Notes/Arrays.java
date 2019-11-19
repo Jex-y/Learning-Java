@@ -5,9 +5,9 @@ public class Arrays {
         int[] array = {1, 2, 3};
         System.out.println(array);
 
-        int [][] array2d = { {1, 2, 3 } , { 4, 5, 6 } };
+        int[][] array2d = {{1, 2, 3}, {4, 5, 6}};
 
-        for (int [] i : array2d) {
+        for (int[] i : array2d) {
             for (int j : i) {
                 System.out.println(j);
             }

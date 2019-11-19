@@ -1,9 +1,5 @@
 package Unit2.Notes;
 
-import org.jetbrains.annotations.NotNull;
-
-import java.sql.SQLOutput;
-import java.util.*;
 import java.util.Queue;
 
 public class JavaQueue {
@@ -12,7 +8,7 @@ public class JavaQueue {
     }
 
     static void queue() {
-        Queue<String> myQueue= new LinkedList<>();
+        Queue<String> myQueue = new LinkedList<>();
 
         // To enforce a fixed size you would define a variable for the maximum size and then check if there is enough
         // space to add the item.
@@ -26,9 +22,9 @@ public class JavaQueue {
 
         System.out.println(myQueue);
 
-        System.out.printf("%s is at the front of the queue\n",myQueue.peek());
+        System.out.printf("%s is at the front of the queue\n", myQueue.peek());
 
-        for (Object element: myQueue) {
+        for (Object element : myQueue) {
             String name = (String) element;
             System.out.println(name);
         }
@@ -54,7 +50,7 @@ public class JavaQueue {
         String next = (String) myPQueue.remove();
 
         System.out.println("Now the queue contains:");
-        for (Object element: myPQueue ) {
+        for (Object element : myPQueue) {
             String name = (String) element;
             System.out.println(name);
         }

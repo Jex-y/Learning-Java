@@ -11,9 +11,9 @@ public class Solution5 {
 
         double price;
         if (totalSpend <= 10) {
-            price = (90/100)*totalSpend;
+            price = (90 / 100) * totalSpend;
         } else if (totalSpend > 10) {
-            price = (80/100)*totalSpend;
+            price = (80 / 100) * totalSpend;
         } else {
             price = totalSpend;
         }

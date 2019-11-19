@@ -1,7 +1,8 @@
 package Unit1.Notes;
 
-import java.time.LocalDateTime;  // Import the LocalDateTime class
-import java.time.format.DateTimeFormatter;  // Import the DateTimeFormatter class
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 public class DateAndTime {
     public static void main(String[] args) {
 

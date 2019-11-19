@@ -11,6 +11,6 @@ public class Truncation {
         short num2 = Short.parseShort(input.nextLine());
 
         short total = (short) (num1 + num2);
-        System.out.printf("%d + %d = %d\n",num1,num2,total);
+        System.out.printf("%d + %d = %d\n", num1, num2, total);
     }
 }

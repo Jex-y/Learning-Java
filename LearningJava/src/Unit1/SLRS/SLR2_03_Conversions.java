@@ -1,6 +1,7 @@
 package Unit1.SLRS;
 
 import java.util.Scanner;
+
 public class SLR2_03_Conversions {
     public static void main(String[] args) {
         menu();
@@ -35,7 +36,7 @@ public class SLR2_03_Conversions {
                     System.out.print("Enter amount in cm ");
                     cm = myScanner.nextDouble();
                     inches = cmToInches(cm);
-                    System.out.printf("%.3f cm is %.3f inches",cm ,inches);
+                    System.out.printf("%.3f cm is %.3f inches", cm, inches);
                     break;
                 case 2:
                     System.out.print("Enter amount in inches ");

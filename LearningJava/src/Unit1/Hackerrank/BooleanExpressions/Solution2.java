@@ -15,10 +15,9 @@ public class Solution2 {
         double result = num % div;
 
         if (result == 0) {
-            System.out.printf("%d is a factor of %d",(long)div, (long)num);
-        }
-        else {
-            System.out.printf("%d is not a factor of %d",(long)div, (long)num);
+            System.out.printf("%d is a factor of %d", (long) div, (long) num);
+        } else {
+            System.out.printf("%d is not a factor of %d", (long) div, (long) num);
         }
 
     }

@@ -8,7 +8,7 @@ public class Solution4 {
 
         System.out.println("How many colours will you enter?");
         int count = Integer.parseInt(input.nextLine());
-        String [] colours = new String[count];
+        String[] colours = new String[count];
 
         int yellowCount = 0;
         int blueCount = 0;
@@ -21,17 +21,17 @@ public class Solution4 {
             buffer = input.nextLine().toUpperCase();
             switch (buffer) {
                 case ("YELLOW"):
-                    yellowCount ++;
+                    yellowCount++;
                     break;
                 case ("BLUE"):
-                    blueCount ++;
+                    blueCount++;
                     break;
-                case("RED"):
+                case ("RED"):
                     redCount++;
                     break;
             }
             colours[i] = buffer;
         }
-        System.out.printf("YELLOW: %d\nBLUE: %d\nRED: %d\n",yellowCount,blueCount,redCount);
+        System.out.printf("YELLOW: %d\nBLUE: %d\nRED: %d\n", yellowCount, blueCount, redCount);
     }
 }

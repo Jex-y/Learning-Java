@@ -15,22 +15,19 @@ public class Solution4 {
         System.out.println("Enter the third number");
         int num3 = Integer.parseInt(input.nextLine());
 
-        if (num1 > num2){
+        if (num1 > num2) {
             if (num1 > num3) {
-                System.out.printf("The largest number is %d\n",num1);
+                System.out.printf("The largest number is %d\n", num1);
+            } else {
+                System.out.printf("The largest number is %d\n", num3);
             }
-            else {
-                System.out.printf("The largest number is %d\n",num3);
-            }
-        }
-        else {
-            if (num2 > num3 ) {
-                System.out.printf("The largest number is %d\n",num2);
-            }
-            else {
-                System.out.printf("The largest number is %d\n",num3);
+        } else {
+            if (num2 > num3) {
+                System.out.printf("The largest number is %d\n", num2);
+            } else {
+                System.out.printf("The largest number is %d\n", num3);
             }
         }
-        System.out.printf("The average is %.1f",((float)(num1 + num2 + num3))/3);
+        System.out.printf("The average is %.1f", ((float) (num1 + num2 + num3)) / 3);
     }
 }

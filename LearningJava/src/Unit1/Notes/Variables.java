@@ -1,13 +1,13 @@
 package Unit1.Notes;
 
 public class Variables {
-    public static void main(String [] args) {
+    public static void main(String[] args) {
 
         /*
-        *----------------------------------------------------------------------------------------------------
-        *                                               NotesUnit1.Variables
-        * ----------------------------------------------------------------------------------------------------
-        */
+         *----------------------------------------------------------------------------------------------------
+         *                                               NotesUnit1.Variables
+         * ----------------------------------------------------------------------------------------------------
+         */
 
         // General syntax for declaring variables is:
         // type name = value;
@@ -16,7 +16,7 @@ public class Variables {
         // or:
         // int myNum;
         // myNum = 15;
-        System.out.println( myNum );
+        System.out.println(myNum);
 
         float myFloatNum = 5.99f; // Float litterals must be followed by an 'f'
         char myLetter = 'D';
@@ -25,7 +25,7 @@ public class Variables {
 
         /*
          *----------------------------------------------------------------------------------------------------
- *                                               Displaying NotesUnit1.Variables
+         *                                               Displaying NotesUnit1.Variables
          * ----------------------------------------------------------------------------------------------------
          */
 

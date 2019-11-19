@@ -12,12 +12,12 @@ public class Solution2 {
         System.out.println("Enter the exponent");
         int exp = Integer.parseInt(input.nextLine());
 
-        int result = exponent(base,exp);
+        int result = exponent(base, exp);
 
-        System.out.printf("%d raised to the power of %d is %d",base,exp,result);
+        System.out.printf("%d raised to the power of %d is %d", base, exp, result);
     }
 
-    private static int exponent(int base, int exp){
+    private static int exponent(int base, int exp) {
         int result = 1;
         for (int i = 0; i < exp; i++) {
             result *= base;

@@ -11,6 +11,6 @@ public class Solution5 {
         String data = input.nextLine();
         double price = Double.parseDouble(data.substring(6));
 
-        System.out.printf("The ticket costs £%.2f",price);
+        System.out.printf("The ticket costs £%.2f", price);
     }
 }

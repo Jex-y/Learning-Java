@@ -1,12 +1,12 @@
 package Unit2.Notes;
 
+@SuppressWarnings("SameParameterValue")
 public class Graph {
     public int numVertices;
     public boolean hasKeys;
     public boolean bidirectional;
-
+    public String[] keys;
     private int[][] adjMatrix;
-    public String [] keys;
 
     Graph(int numVertices) {
         this.numVertices = numVertices;
@@ -24,7 +24,7 @@ public class Graph {
         this.bidirectional = bidirectional;
     }
 
-    Graph(int numVertices, String [] keys) {
+    Graph(int numVertices, String[] keys) {
         this.numVertices = numVertices;
         adjMatrix = new int[numVertices][numVertices];
         hasKeys = true;
@@ -33,7 +33,7 @@ public class Graph {
         assert keys.length == numVertices;
     }
 
-    Graph(int numVertices,String [] keys, boolean bidirectional) {
+    Graph(int numVertices, String[] keys, boolean bidirectional) {
         this.numVertices = numVertices;
         adjMatrix = new int[numVertices][numVertices];
         hasKeys = true;
@@ -77,16 +77,16 @@ public class Graph {
             throw new IndexOutOfBoundsException("Key " + to + " does not exist.");
         }
 
-        addEdge(fromIndex,toIndex, weight);
+        addEdge(fromIndex, toIndex, weight);
     }
 
 
     public void addEdge(int from, int to, int weight) {
         if (!(0 <= from & from < this.numVertices)) {
-            throw new IndexOutOfBoundsException("Index " + String.valueOf(from) + " out of bounds.");
+            throw new IndexOutOfBoundsException("Index " + from + " out of bounds.");
         }
         if (!(0 <= to & to < this.numVertices)) {
-            throw new IndexOutOfBoundsException("Index " + String.valueOf(to) + " out of bounds.");
+            throw new IndexOutOfBoundsException("Index " + to + " out of bounds.");
         }
 
         adjMatrix[from][to] = weight;
@@ -94,6 +94,7 @@ public class Graph {
             adjMatrix[to][from] = weight;
         }
     }
+
     private String padTo(String str, int length) {
         while (str.length() < length) {
             str += " ";
@@ -105,17 +106,17 @@ public class Graph {
         int length = 8;
         if (this.hasKeys) {
             System.out.printf("\t\t");
-            for (String key: keys) {
-                System.out.printf("%s\t",padTo(key,length));
+            for (String key : keys) {
+                System.out.printf("%s\t", padTo(key, length));
             }
             System.out.printf("\n");
         }
         for (int i = 0; i < numVertices; i++) {
             if (this.hasKeys) {
-                System.out.printf("%s\t",padTo(this.keys[i],length));
+                System.out.printf("%s\t", padTo(this.keys[i], length));
             }
             for (int j = 0; j < numVertices; j++) {
-                System.out.printf("%d\t\t\t",adjMatrix[i][j]);
+                System.out.printf("%d\t\t\t", adjMatrix[i][j]);
             }
             System.out.printf("\n");
         }

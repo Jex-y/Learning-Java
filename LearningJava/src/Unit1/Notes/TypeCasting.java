@@ -24,12 +24,10 @@ public class TypeCasting {
         // Narrowing casting must be done manually.
 
         myDouble = 3.141;
-        int myInt2 = (int)myDouble;
+        int myInt2 = (int) myDouble;
 
         System.out.println(myDouble); // Outputs 3.141
         System.out.println(myInt2); // Outputs 3
-
-
 
 
     }

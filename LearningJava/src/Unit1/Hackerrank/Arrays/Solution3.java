@@ -1,7 +1,7 @@
 package Unit1.Hackerrank.Arrays;
 
-import java.util.*;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Solution3 {
 
@@ -21,11 +21,11 @@ public class Solution3 {
 
         for (String name : allNames) {
             if (name.toLowerCase().equals(target.toLowerCase())) {
-                count ++;
+                count++;
             }
         }
 
-        System.out.printf("Found %s %d times",target,count);
+        System.out.printf("Found %s %d times", target, count);
     }
 }
 

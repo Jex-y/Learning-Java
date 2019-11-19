@@ -12,7 +12,7 @@ public class Solution1 {
         System.out.println("Enter the second number");
         int second = Integer.parseInt(input.nextLine());
 
-        for (int i = ((first < second) ? first : second); i <= ((second > first ) ? second : first); i++) {
+        for (int i = ((first < second) ? first : second); i <= ((second > first) ? second : first); i++) {
             System.out.println(i);
         }
 

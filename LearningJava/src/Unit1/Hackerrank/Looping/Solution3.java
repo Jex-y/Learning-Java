@@ -2,6 +2,7 @@ package Unit1.Hackerrank.Looping;
 
 import java.util.Scanner;
 
+@SuppressWarnings("ALL")
 public class Solution3 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -21,6 +22,6 @@ public class Solution3 {
                 highest = num;
             }
         }
-        System.out.printf("The lowest number was %d\nThe highest number was %d",lowest,highest);
+        System.out.printf("The lowest number was %d\nThe highest number was %d", lowest, highest);
     }
 }

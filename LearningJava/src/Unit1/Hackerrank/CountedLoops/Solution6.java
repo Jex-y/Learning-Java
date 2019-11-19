@@ -8,8 +8,8 @@ public class Solution6 {
         int sum = 0;
         for (int i = 0; i < 5; i++) {
             System.out.println("Enter a number");
-            sum +=  Integer.parseInt(input.nextLine());
+            sum += Integer.parseInt(input.nextLine());
         }
-        System.out.printf("Total is %d\n",sum);
+        System.out.printf("Total is %d\n", sum);
     }
 }

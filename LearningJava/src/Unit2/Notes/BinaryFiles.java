@@ -5,11 +5,12 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+@SuppressWarnings("SameParameterValue")
 public class BinaryFiles {
     public static void main(String[] args) {
         final String path = "src\\Unit2\\Notes\\Output Files\\binaryTestFile.txt";
         String stringToWrite = "Hello world!";
-        writeString(stringToWrite,path);
+        writeString(stringToWrite, path);
         System.out.println("Read: " + readString(path));
     }
 
@@ -39,10 +40,10 @@ public class BinaryFiles {
         StringBuilder output = new StringBuilder();
         try {
             FileInputStream fin = new FileInputStream(path);
-            data = (char)fin.read();
-            while (data != (char)-1){
+            data = (char) fin.read();
+            while (data != (char) -1) {
                 output.append(data);
-                data = (char)fin.read();
+                data = (char) fin.read();
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
