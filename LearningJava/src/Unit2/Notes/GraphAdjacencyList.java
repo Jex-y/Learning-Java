@@ -1,32 +1,36 @@
 package Unit2.Notes;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-
-@SuppressWarnings("SameParameterValue")
-public class GraphAdjacencyMatrix {
-    public int numVertices;
+//TODO
+public class GraphAdjacencyList {
+    public int numVertices = 0;
     public boolean hasKeys;
     public boolean bidirectional;
-    public Map<String, Integer> keys = new HashMap<>();
-    private int[][] adjMatrix;
+    public Map<String,Integer> keys;
+    private Map<Integer, ArrayList<Integer>> adjacencyList;;
 
-    GraphAdjacencyMatrix(int numVertices) { new GraphAdjacencyMatrix(numVertices,null, false); }
+    GraphAdjacencyList() {
+        new GraphAdjacencyList(null,false);
+    }
 
-    GraphAdjacencyMatrix(int numVertices, boolean bidirectional) { new GraphAdjacencyMatrix(numVertices, null, bidirectional); }
+    GraphAdjacencyList(boolean bidirectional) {
+        new GraphAdjacencyList(null, bidirectional);
+    }
 
-    GraphAdjacencyMatrix(int numVertices, String[] keys) { new GraphAdjacencyMatrix(numVertices, keys, false); }
+    GraphAdjacencyList(String[] keys) {
+        new GraphAdjacencyList(keys, false);
+    }
 
-    GraphAdjacencyMatrix(int numVertices, String[] keys, boolean bidirectional) {
-        this.numVertices = numVertices;
-        adjMatrix = new int[numVertices][numVertices];
-        hasKeys = (keys != null);
+    GraphAdjacencyList(String[] keys, boolean bidirectional) {
+        this.adjacencyList = new HashMap<>();
+        this.hasKeys = (keys != null);
         for (int i = 0; i < keys.length; i++) {
             this.keys.put(keys[i],i);
         }
         this.bidirectional = bidirectional;
-        assert keys.length == numVertices;
     }
 
     private int keyToIndex(String key) {
@@ -41,6 +45,9 @@ public class GraphAdjacencyMatrix {
     }
 
     public void addEdge(String from, String to) {
+        for (String srt: new String[]{from, to }) {
+
+        }
         this.addEdge(from, to, 1);
     }
 
@@ -77,9 +84,7 @@ public class GraphAdjacencyMatrix {
         }
 
         adjMatrix[from][to] = weight;
-        if (bidirectional) {
-            adjMatrix[to][from] = weight;
-        }
+        if (bidirectional) adjMatrix[to][from] = weight;
     }
 
     private String padTo(String str, int length) {
@@ -93,13 +98,14 @@ public class GraphAdjacencyMatrix {
         int length = 8;
         if (this.hasKeys) {
             System.out.printf("\t\t");
-            for (String key : keys.keySet()) {
+            for (String key : keys) {
                 System.out.printf("%s\t", padTo(key, length));
             }
             System.out.printf("\n");
         }
         Iterator<String> iter = null;
         if (this.hasKeys) iter = this.keys.keySet().iterator();
+        for (int i)
         for (int i = 0; i < numVertices; i++) {
             if (this.hasKeys) {
                 System.out.printf("%s\t", padTo(iter.next(), length));
@@ -111,3 +117,4 @@ public class GraphAdjacencyMatrix {
         }
     }
 }
+

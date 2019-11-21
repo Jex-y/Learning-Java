@@ -1,124 +1,26 @@
 package Unit2.Notes;
 
-@SuppressWarnings("SameParameterValue")
 public class Graph {
-    public int numVertices;
-    public boolean hasKeys;
-    public boolean bidirectional;
-    public String[] keys;
-    private int[][] adjMatrix;
+    public static void main(String[] args) {
+        String[] keys = {"Bob", "Alice", "Mark", "Rob", "Maria"};
+        GraphAdjacencyMatrix graphAdjacencyMatrix = new GraphAdjacencyMatrix(5, keys);
 
-    Graph(int numVertices) {
-        this.numVertices = numVertices;
-        adjMatrix = new int[numVertices][numVertices];
-        hasKeys = false;
-        this.keys = null;
-        bidirectional = true;
-    }
+        // Bob
+        graphAdjacencyMatrix.addEdge("Bob", "Alice");
+        graphAdjacencyMatrix.addEdge("Bob", "Rob");
 
-    Graph(int numVertices, boolean bidirectional) {
-        this.numVertices = numVertices;
-        adjMatrix = new int[numVertices][numVertices];
-        hasKeys = false;
-        this.keys = null;
-        this.bidirectional = bidirectional;
-    }
+        // Alice
+        graphAdjacencyMatrix.addEdge(1, 2);
+        graphAdjacencyMatrix.addEdge(1, 4);
 
-    Graph(int numVertices, String[] keys) {
-        this.numVertices = numVertices;
-        adjMatrix = new int[numVertices][numVertices];
-        hasKeys = true;
-        this.keys = keys;
-        this.bidirectional = true;
-        assert keys.length == numVertices;
-    }
+        // Mark
+        graphAdjacencyMatrix.addEdge(2, 3);
 
-    Graph(int numVertices, String[] keys, boolean bidirectional) {
-        this.numVertices = numVertices;
-        adjMatrix = new int[numVertices][numVertices];
-        hasKeys = true;
-        this.keys = keys;
-        this.bidirectional = bidirectional;
-        assert keys.length == numVertices;
-    }
+        // Rob
+        graphAdjacencyMatrix.addEdge(3, 4);
 
-    private int keyToIndex(String key) {
-        int index = -1;
-        for (int i = 0; i < keys.length; i++) {
-            if (keys[i].equals(key)) {
-                index = i;
-                break;
-            }
-        }
-        return index;
-    }
-
-    public void addEdge(String from, String to) {
-        this.addEdge(from, to, 1);
-    }
-
-    public void addEdge(int from, int to) {
-        addEdge(from, to, 1);
-    }
-
-    public void addEdge(String from, String to, int weight) {
-        int fromIndex = keyToIndex(from);
-        int toIndex = keyToIndex(to);
-
-        if (!this.hasKeys) {
-            throw new UnsupportedOperationException("Cannot use string keys if no keys provided.");
-        }
-
-        if (fromIndex < 0) {
-            throw new IndexOutOfBoundsException("Key " + from + " doest not exist.");
-        }
-
-        if (toIndex < 0) {
-            throw new IndexOutOfBoundsException("Key " + to + " does not exist.");
-        }
-
-        addEdge(fromIndex, toIndex, weight);
-    }
-
-
-    public void addEdge(int from, int to, int weight) {
-        if (!(0 <= from & from < this.numVertices)) {
-            throw new IndexOutOfBoundsException("Index " + from + " out of bounds.");
-        }
-        if (!(0 <= to & to < this.numVertices)) {
-            throw new IndexOutOfBoundsException("Index " + to + " out of bounds.");
-        }
-
-        adjMatrix[from][to] = weight;
-        if (bidirectional) {
-            adjMatrix[to][from] = weight;
-        }
-    }
-
-    private String padTo(String str, int length) {
-        while (str.length() < length) {
-            str += " ";
-        }
-        return str;
-    }
-
-    public void print() {
-        int length = 8;
-        if (this.hasKeys) {
-            System.out.printf("\t\t");
-            for (String key : keys) {
-                System.out.printf("%s\t", padTo(key, length));
-            }
-            System.out.printf("\n");
-        }
-        for (int i = 0; i < numVertices; i++) {
-            if (this.hasKeys) {
-                System.out.printf("%s\t", padTo(this.keys[i], length));
-            }
-            for (int j = 0; j < numVertices; j++) {
-                System.out.printf("%d\t\t\t", adjMatrix[i][j]);
-            }
-            System.out.printf("\n");
-        }
+        graphAdjacencyMatrix.print();
     }
 }
+
+

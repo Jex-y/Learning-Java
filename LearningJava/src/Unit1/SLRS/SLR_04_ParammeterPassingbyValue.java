@@ -1,7 +1,7 @@
 package Unit1.SLRS;
 
 @SuppressWarnings("WeakerAccess")
-public class SLR_04_ParameterPassingbyValue {
+public class SLR_04_ParammeterPassingbyValue {
     public static void main(String[] args) {
         int x = 1;
         System.out.printf("Value in main is %d\n", x);
