@@ -1,10 +1,10 @@
 package Unit2.SLRS;
 
-import java.text.DecimalFormat;
-import java.util.Dictionary;
-import java.util.Enumeration;
-import java.util.Hashtable;
-import java.util.Scanner;
+        import java.text.DecimalFormat;
+        import java.util.Dictionary;
+        import java.util.Enumeration;
+        import java.util.Hashtable;
+        import java.util.Scanner;
 
 public class SLR4_10 {
     public static void main(String[] args) {
@@ -42,6 +42,10 @@ public class SLR4_10 {
             country = (String) keys.nextElement();
             System.out.printf("The capital of %s is %s\n",country,capitals.get(country));
         }
+//-------------------------------------------------------------------------------------------------------------
+        System.out.println("Enter a country to remove:");
+        country = input.nextLine();
+        capitals.remove(country);
     }
 
     static boolean inDict(Dictionary dict, String key){
@@ -54,5 +58,4 @@ public class SLR4_10 {
         }
         return result;
     }
-
 }
