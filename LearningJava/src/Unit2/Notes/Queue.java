@@ -36,19 +36,19 @@ public class Queue<dataType> {
 
     public static void main(String[] args) {
         Queue<Integer> x = new Queue<Integer>(3, "circular");
-        x.put(1);
-        x.put(2);
-        x.put(3);
-        System.out.println(x.pop());
-        x.put(4);
+        x.enqueue(1);
+        x.enqueue(2);
+        x.enqueue(3);
+        System.out.println(x.dequeue());
+        x.enqueue(4);
         System.out.println(x.toString());
-        System.out.println(x.pop());
-        System.out.println(x.pop());
+        System.out.println(x.dequeue());
+        System.out.println(x.dequeue());
         System.out.println(x.toString());
-        System.out.println(x.pop());
+        System.out.println(x.dequeue());
     }
 
-    public void put(dataType value) {
+    public void enqueue(dataType value) {
         if (type.equals("linear")) {
             if (backPointer < MAXSIZE) {
                 data.add(value);
@@ -69,7 +69,7 @@ public class Queue<dataType> {
         }
     }
 
-    public dataType pop() {
+    public dataType dequeue() {
         dataType result = null;
         if (type.equals("linear")) {
             if (startPointer < backPointer) {
