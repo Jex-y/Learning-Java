@@ -7,8 +7,8 @@ public class SLR4_01 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        //q1(input);
-        //q2(input);
+        q1(input);
+        q2(input);
         q3(input);
     }
 

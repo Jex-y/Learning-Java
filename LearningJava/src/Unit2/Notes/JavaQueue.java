@@ -1,5 +1,6 @@
 package Unit2.Notes;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.PriorityQueue;
 import java.util.Queue;
@@ -10,7 +11,10 @@ public class JavaQueue {
     }
 
     static void queue() {
-        Queue<String> myQueue = new LinkedList<>();
+        Queue<String> baseQueue = new LinkedList<>();
+        staticQueue myQueue = new staticQueue(baseQueue, 4);
+        final int MAX_SIZE = 4;
+        int size = 0;
 
         // To enforce a fixed size you would define a variable for the maximum size and then check if there is enough
         // space to add the item.
@@ -56,5 +60,51 @@ public class JavaQueue {
             String name = (String) element;
             System.out.println(name);
         }
+    }
+}
+
+class staticQueue implements Iterable<Object> {
+    // Should probably use inheritance but a wrapper is easier.
+    Queue queue;
+    final int MAX_SIZE;
+    int size = 0;
+
+    staticQueue(Queue queue, int MAX_SIZE) {
+        this.queue = queue;
+        this.MAX_SIZE = MAX_SIZE;
+    }
+
+    void add(Object item) {
+        if (size < MAX_SIZE) {
+            queue.add(item);
+            size ++;
+        } else {
+            System.err.println("Error: Cannot add item, queue full");
+        }
+    }
+
+    Object remove() {
+        Object result;
+        if (size > 0) {
+            result = queue.remove();
+            size --;
+        } else {
+            System.err.println("Error: Queue is empty, cannot remove item");
+            result = null;
+        }
+        return result;
+    }
+
+    boolean isEmpty() { return queue.isEmpty(); }
+
+    Object peek() { return queue.peek(); }
+
+    public String toString() {
+        return String.format("%s, size: %d/%d",queue.toString(), size, MAX_SIZE);
+    }
+
+    @Override
+    public Iterator<Object> iterator() {
+        return queue.iterator();
     }
 }
