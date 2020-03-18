@@ -1,7 +1,7 @@
-package Unit5.Hackerrank;
+package Unit5.HackerrankTest1;
 
 import java.util.Scanner;
-import java.util.LinkedList;
+
 public class Solution5 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);

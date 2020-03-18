@@ -1,4 +1,4 @@
-package Unit5.Hackerrank;
+package Unit5.HackerrankTest1;
 
 import java.util.Scanner;
 import java.lang.Math;
