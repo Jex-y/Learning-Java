@@ -1,4 +1,4 @@
-package Unit6;
+package Unit7;
 
 public class RecursionExample {
     public static void main(String[] args) {
