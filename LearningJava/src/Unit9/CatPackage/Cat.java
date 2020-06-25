@@ -1,10 +1,10 @@
 package Unit9.CatPackage;
 
 public class Cat {
-    String name, breed, gender;
-    int hunger = 10;
-    int energy = 10;
-    int happiness = 10;
+    private String name, breed, gender;
+    private int hunger = 10;
+    private int energy = 10;
+    private int happiness = 0;
 
     Cat(String name, String breed, String gender) {
         this.name = name;
@@ -19,11 +19,49 @@ public class Cat {
     }
 
     public void sleep() {
-
+        if (energy < 4) {
+            energy += 5;
+            hunger += 3;
+            happiness += 4;
+        }
     }
 
     public void play() {
+        if (energy > 3 && hunger < 8) {
+            happiness += 2;
+            hunger += 1;
+            energy -= 1;
+        }
+    }
 
+    public String get_name() {
+        return name;
+    }
+
+    public void set_name(String name) {
+        if (name.length() > 0) {
+            this.name = name;
+        }
+    }
+
+    public String getBreed() {
+        return breed;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public int getHunger() {
+        return hunger;
+    }
+
+    public int getEnergy() {
+        return energy;
+    }
+
+    public int getHappiness() {
+        return happiness;
     }
 
     @Override
